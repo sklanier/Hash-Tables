@@ -2,15 +2,17 @@
 
 # Do not use any of the built in array functions for this exercise
 class array:
-    def __init__(self):
+    def __init__(self, elements, capacity):
         # Your code here
-        pass
+        self.capacity = capacity
+        self.elements = (self.capacity)*[None]
+        self.count = 0
 
 
 # Double the size of the given array
-def resize_array():
-    # Your code here
-    pass
+def resize_array(array):
+    doubleCapacity = array.capacity * 2
+    doubleElements = (doubleCapacity) * [None]
 
 
 # Return an element of a given array at a given index
